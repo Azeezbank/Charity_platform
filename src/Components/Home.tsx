@@ -127,7 +127,7 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className="container-fluid bg-light text-container">
-        <div className="row p-4">
+        <div className="row pt-4 pb-4 ps-2 pe-2">
           <div className="col-sm-6">
             <h2 className="pt-3">
               Empowering{" "}
