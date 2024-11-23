@@ -150,7 +150,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="container-fluid pt-5 pb-5 ps-2 pe-2">
+      <div className="container-fluid pt-5 pb-5 ps-3 pe-3">
         <h2 className="pe-2 support-mission">
           Commitment to <span className="text-danger">impactful</span> change
           and <span className="text-danger"> community welfare</span>
@@ -300,7 +300,7 @@ const Home: React.FC = () => {
               >
                 <div className="row">
                   <div className="col-sm-6 missionTextP">
-                <h3>collaborating with like-minded organizations</h3>
+                <h3>Collaborating with like-minded organizations</h3>
                 <p className="text-muted">
                   Collaborating with like-minded organizations, bussiness, and
                   individuals to maximize resources and extend our reach for
@@ -345,7 +345,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="container-fluid bg-light pt-5 pb-5 ps-2 pe-2">
+      <div className="container-fluid bg-light pt-5 pb-5 ps-3 pe-3">
         <h2 className="pe-2 support-mission">Support <span className="text-danger">our mission,</span> change lives today</h2>
       <p className="text-muted support-mission-C">Your donation empower us to continue our vital work, creating lasting impact and positive change</p>
       </div>
