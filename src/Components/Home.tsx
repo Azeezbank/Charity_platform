@@ -7,6 +7,9 @@ import mission from "../assets/home-charity-tab-1.jpg";
 import program from "../assets/home-charity-tab-2.jpg";
 import partner from "../assets/home-charity-tab-3.jpg";
 import donate from "../assets/home-charity-tab-4.jpg";
+import clean from "../assets/home-charity-donation-2.jpg";
+import hunger from "../assets/home-charity-donation-4.jpg";
+import serve from "../assets/home-charity-donation-6.jpg";
 //import { button } from "framer-motion/client";
 //import { text } from "framer-motion/client";
 
@@ -171,10 +174,10 @@ const Home: React.FC = () => {
                 >
                   <div className="row">
                     <div className="col-2 pt-2">
-                      <h1 className="bi bi-bullseye"></h1>
+                      <h3 className="bi bi-bullseye"></h3>
                     </div>
                     <div className="col-10 ps-5">
-                      <h2 className="float-start">Our mission</h2> <br />
+                      <h3 className="float-start">Our mission</h3> <br />
                       <p className="text-muted float-start">
                         About us and history
                       </p>
@@ -191,10 +194,10 @@ const Home: React.FC = () => {
                 >
                   <div className="row ps-3">
                     <div className="col-2">
-                      <h1 className="bi bi-backpack-fill"></h1>
+                      <h3 className="bi bi-backpack-fill"></h3>
                     </div>
                     <div className="col-10 float-start ps-5">
-                      <h2 className="float-start">Our programs</h2> <br />
+                      <h3 className="float-start">Our programs</h3> <br />
                       <p className="text-muted float-start">Make a change</p>
                     </div>
                   </div>
@@ -209,10 +212,10 @@ const Home: React.FC = () => {
                 >
                   <div className="row ps-3">
                     <div className="col-2">
-                      <h1 className="bi bi-people-fill"></h1>
+                      <h3 className="bi bi-people-fill"></h3>
                     </div>
                     <div className="col-10 float-start ps-5">
-                      <h2 className="float-start">Our partners</h2> <br />
+                      <h3 className="float-start">Our partners</h3> <br />
                       <p className="text-muted float-start">
                         long-term partners
                       </p>
@@ -229,10 +232,10 @@ const Home: React.FC = () => {
                 >
                   <div className="row ps-3">
                     <div className="col-2">
-                      <h1 className="bi bi-currency-dollar"></h1>
+                      <h3 className="bi bi-currency-dollar"></h3>
                     </div>
                     <div className="col-10 float-start ps-5">
-                      <h2 className="float-start">Donate now</h2> <br />
+                      <h3 className="float-start">Donate now</h3> <br />
                       <p className="text-muted float-start">Save a life</p>
                     </div>
                   </div>
@@ -250,19 +253,19 @@ const Home: React.FC = () => {
               >
                 <div className="row">
                   <div className="col-sm-6 missionTextP">
-                <h3>Empowering lives through compassionate support</h3>
-                <p className="text-muted">
-                  Our mission is to empower individuals and family through
-                  comprehensive services, fostering resience, dignity, and
-                  positive community impact for a brighter future.
-                </p>
-                <button className="btn btn-danger rounded-pill mt-3">
-                  Learn more
-                </button>
-                </div>
-                <div className="col-sm-6">
-                <img className="accord" src={mission} alt="mission" />
-                </div>
+                    <h3>Empowering lives through compassionate support</h3>
+                    <p className="text-muted">
+                      Our mission is to empower individuals and family through
+                      comprehensive services, fostering resience, dignity, and
+                      positive community impact for a brighter future.
+                    </p>
+                    <button className="btn btn-danger rounded-pill mt-3">
+                      Learn more
+                    </button>
+                  </div>
+                  <div className="col-sm-6">
+                    <img className="accord" src={mission} alt="mission" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -275,19 +278,19 @@ const Home: React.FC = () => {
               >
                 <div className="row">
                   <div className="col-sm-6 missionTextP">
-                <h3>Offering diverse programs focused on education</h3>
-                <p className="text-muted">
-                  Offering diverse programs focused on education, healthcare,
-                  environment, and community development for sustainable
-                  positive impact.
-                </p>
-                <button className="btn btn-danger rounded-pill mt-3">
-                  Learn more
-                </button>
-                </div>
-                <div className="col-sm-6">
-                <img className="accord" src={program} alt="programs" />
-                </div>
+                    <h3>Offering diverse programs focused on education</h3>
+                    <p className="text-muted">
+                      Offering diverse programs focused on education,
+                      healthcare, environment, and community development for
+                      sustainable positive impact.
+                    </p>
+                    <button className="btn btn-danger rounded-pill mt-3">
+                      Learn more
+                    </button>
+                  </div>
+                  <div className="col-sm-6">
+                    <img className="accord" src={program} alt="programs" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -300,19 +303,19 @@ const Home: React.FC = () => {
               >
                 <div className="row">
                   <div className="col-sm-6 missionTextP">
-                <h3>Collaborating with like-minded organizations</h3>
-                <p className="text-muted">
-                  Collaborating with like-minded organizations, bussiness, and
-                  individuals to maximize resources and extend our reach for
-                  greater impact.
-                </p>
-                <button className="btn btn-danger rounded-pill mt-3">
-                  Learn more
-                </button>
-                </div>
-                <div className="col-sm-6">
-                <img className="accord" src={partner} alt="partnership" />
-                </div>
+                    <h3>Collaborating with like-minded organizations</h3>
+                    <p className="text-muted">
+                      Collaborating with like-minded organizations, bussiness,
+                      and individuals to maximize resources and extend our reach
+                      for greater impact.
+                    </p>
+                    <button className="btn btn-danger rounded-pill mt-3">
+                      Learn more
+                    </button>
+                  </div>
+                  <div className="col-sm-6">
+                    <img className="accord" src={partner} alt="partnership" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -325,19 +328,19 @@ const Home: React.FC = () => {
               >
                 <div className="row">
                   <div className="col-sm-6 missionTextP">
-                <h3>Every contribution direcly support our causes</h3>
-                <p className="text-muted">
-                  Our mission is to empower individuals and family through
-                  comprehensive services, fostering resience, dignity, and
-                  positive community impact for a brighter future.
-                </p>
-                <button className="btn btn-danger rounded-pill mt-3">
-                  Learn more
-                </button>
-                </div>
-                <div className="col-sm-6">
-                <img className="accord" src={donate} alt="image" />
-                </div>
+                    <h3>Every contribution direcly support our causes</h3>
+                    <p className="text-muted">
+                      Our mission is to empower individuals and family through
+                      comprehensive services, fostering resience, dignity, and
+                      positive community impact for a brighter future.
+                    </p>
+                    <button className="btn btn-danger rounded-pill mt-3">
+                      Learn more
+                    </button>
+                  </div>
+                  <div className="col-sm-6">
+                    <img className="accord" src={donate} alt="image" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -346,8 +349,84 @@ const Home: React.FC = () => {
       </div>
 
       <div className="container-fluid bg-light pt-5 pb-5 ps-3 pe-3">
-        <h2 className="pe-2 support-mission">Support <span className="text-danger">our mission,</span> change lives today</h2>
-      <p className="text-muted support-mission-C">Your donation empower us to continue our vital work, creating lasting impact and positive change</p>
+        <h2 className="pe-2 support-mission">
+          Support <span className="text-danger">our mission,</span> change lives
+          today
+        </h2>
+        <p className="text-muted support-mission-C">
+          Your donation empower us to continue our vital work, creating lasting
+          impact and positive change
+        </p>
+        <div className="p-2 grid1">
+          <div className="bg-white rounded grid2Top">
+            <img className="imageWidth " src={clean} alt="clean water" />
+            <div className="p-3">
+            <h5>support acces to clean water</h5>
+            <p className="text-muted">
+              Together, we can make a meaningful impact and transform lives.
+            </p>
+            <hr />
+            <div className="progress">
+              <div
+                className="progress-bar bg-danger"
+                style={{ width: "1px" }}
+              ></div>
+            </div>
+            <div className="d-flex justify-content-between mt-3">
+              <p>
+                #1,000 <br />
+                <span className="text-muted">Amount available</span>
+              </p>
+              <p className="text-center">
+                1 <br />
+                <span className="text-muted">Donations</span>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded grid2Top">
+            <img className="imageWidth" src={hunger} alt="clean water" />
+            <div className="p-3">
+            <h5>Ending hunger - donate for access to food</h5>
+            <p className="text-muted">Every contribution counts towards building a world for everyone to live in.</p>
+            <hr/>
+            <div className="progress">
+              <div className="progress-bar bg-danger" style={{width: '1px'}}></div>
+            </div>
+            <div className="d-flex justify-content-between mt-3">
+            <p>
+                #1,000 <br />
+                <span className="text-muted">Amount available</span>
+              </p>
+              <p className="text-center">
+                1 <br />
+                <span className="text-muted">Donations</span>
+              </p>
+            </div>
+            </div>
+          </div>
+          <div className="bg-white rounded grid2Top">
+          <img className="imageWidth " src={serve} alt="clean water" />
+          <div className="p-3">
+            <h5>Serve and support the community</h5>
+            <p className="text-muted">Join us in our mission to create a brighter future for generations to come.</p>
+            <hr/>
+            <div className="progress">
+              <div className="progress-bar bg-danger" style={{width: '1px'}}></div>
+            </div>
+            <div className="d-flex justify-content-between mt-3">
+            <p>
+                #1,000 <br />
+                <span className="text-muted">Amount available</span>
+              </p>
+              <p className="text-center">
+                1 <br />
+                <span className="text-muted">Donations</span>
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
