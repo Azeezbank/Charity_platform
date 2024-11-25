@@ -14,6 +14,7 @@ import serve from "../assets/home-charity-donation-6.jpg";
 //import { text } from "framer-motion/client";
 
 const Home: React.FC = () => {
+  const [isActive, setIsActive] = useState(1);
   const images = [
     {
       image: hand,
@@ -166,18 +167,18 @@ const Home: React.FC = () => {
         <div id="accordion">
           <div className="container bg-light round mt-5">
             <div className="cardd text-white">
-              <div className="hover2 mission ps-3 pe-3">
+              <div className={`hover2 mission ps-3 pe-3 ${isActive === 1 ? 'active' : '' }`}>
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
                   href="#collapseOne"
                 >
-                  <div className="row">
+                  <div className={`row`}>
                     <div className="col-2 pt-2">
                       <h3 className="bi bi-bullseye"></h3>
                     </div>
                     <div className="col-10 ps-5">
-                      <h3 className="float-start">Our mission</h3> <br />
+                      <h3 className={`float-start`} onClick={() => setIsActive(1)}>Our mission</h3> <br />
                       <p className="text-muted float-start">
                         About us and history
                       </p>
