@@ -167,12 +167,17 @@ const Home: React.FC = () => {
         <div id="accordion">
           <div className="container bg-light round mt-5">
             <div className="cardd text-white">
-              <div className={`hover2 mission ps-3 pe-3 ${isActive === 1 ? 'active' : '' }`} onClick={() => setIsActive(1)}>
-                <a
+              <a
                   className="btn"
                   data-bs-toggle="collapse"
                   href="#collapseOne"
                 >
+              <div className={`hover2 mission ps-3 pe-3 ${isActive === 1 ? 'active' : '' }`} onClick={() => setIsActive(1)}>
+                {/* <a
+                  className="btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseOne"
+                >*/}
                   <div className={`row`}>
                     <div className="col-2 pt-2">
                       <h3 className="bi bi-bullseye"></h3>
@@ -184,8 +189,9 @@ const Home: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                </a>
+              
               </div>
+            </a>
 
               <div className={`hover2 ${isActive === 2 ? 'active' : '' }`} onClick={() => setIsActive(2)}>
                 <a
