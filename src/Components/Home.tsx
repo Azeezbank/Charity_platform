@@ -51,7 +51,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     const intertext = setInterval(() => {
       setcurrentText((prevText: any) => (prevText + 1) % texts.length);
-    }, 1000);
+    }, 2000);
     return () => clearInterval(intertext);
   }, [texts.length]);
 
