@@ -225,7 +225,7 @@ const Home: React.FC = () => {
                 </a>
               </div>
 
-              <div className={`hover2 donate ${isActive === 4 ? 'active' : '' }`}>
+              <div className={`hover2 donate ${isActive === 4 ? 'active' : '' }`} onClick={() => setIsActive(4)}>
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
