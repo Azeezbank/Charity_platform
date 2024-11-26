@@ -167,7 +167,7 @@ const Home: React.FC = () => {
         <div id="accordion">
           <div className="container bg-light round mt-5">
             <div className="cardd text-white">
-              <div className={`hover2 mission ps-3 pe-3 ${isActive === 1 ? 'active' : '' }`}>
+              <div className={`hover2 mission ps-3 pe-3 ${isActive === 1 ? 'active' : '' }`} onClick={() => setIsActive(1)}>
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
@@ -178,7 +178,7 @@ const Home: React.FC = () => {
                       <h3 className="bi bi-bullseye"></h3>
                     </div>
                     <div className="col-10 ps-5">
-                      <h3 className={`float-start`} onClick={() => setIsActive(1)}>Our mission</h3> <br />
+                      <h3 className={`float-start`}>Our mission</h3> <br />
                       <p className="text-muted float-start">
                         About us and history
                       </p>
@@ -187,7 +187,7 @@ const Home: React.FC = () => {
                 </a>
               </div>
 
-              <div className={`hover2 ${isActive === 2 ? 'active' : '' }`}>
+              <div className={`hover2 ${isActive === 2 ? 'active' : '' }`} onClick={() => setIsActive(2)}>
                 <a
                   className="collapsed btn"
                   data-bs-toggle="collapse"
@@ -198,14 +198,14 @@ const Home: React.FC = () => {
                       <h3 className="bi bi-backpack-fill"></h3>
                     </div>
                     <div className="col-10 float-start ps-5">
-                      <h3 className="float-start" onClick={() => setIsActive(2)}>Our programs</h3> <br />
+                      <h3 className="float-start">Our programs</h3> <br />
                       <p className="text-muted float-start">Make a change</p>
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div className={`hover2 ${isActive === 3 ? 'active' : '' }`}>
+              <div className={`hover2 ${isActive === 3 ? 'active' : '' }`} onClick={() => setIsActive(3)}>
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
@@ -216,7 +216,7 @@ const Home: React.FC = () => {
                       <h3 className="bi bi-people-fill"></h3>
                     </div>
                     <div className="col-10 float-start ps-5">
-                      <h3 className="float-start" onClick={() => setIsActive(3)}>Our partners</h3> <br />
+                      <h3 className="float-start">Our partners</h3> <br />
                       <p className="text-muted float-start">
                         long-term partners
                       </p>
@@ -236,7 +236,7 @@ const Home: React.FC = () => {
                       <h3 className="bi bi-currency-dollar"></h3>
                     </div>
                     <div className="col-10 float-start ps-5">
-                      <h3 className="float-start" onClick={() => setIsActive(4)}>Donate now</h3> <br />
+                      <h3 className="float-start">Donate now</h3> <br />
                       <p className="text-muted float-start">Save a life</p>
                     </div>
                   </div>
