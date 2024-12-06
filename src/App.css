@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .heart {
@@ -39,7 +39,7 @@
   height: 400px;
 }
 .slider-container {
-  margin-top:75px;
+  margin-top: 75px;
   overflow: hidden;
   padding-top: 0px;
   width: 100%;
@@ -108,23 +108,65 @@
   }
 }
 
-.text-container {margin-top: -60px;}
-.cardd {border-radius: 15px;}
-.mission {border-top-left-radius: 15px; border-top-right-radius: 15px;}
-.donate {border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;}
-.cardd2 {border-radius: 15px; margin-top: 20px;}
-.round {border-radius: 20px; margin-top: 20px;}
-.accord {width: 100%; border-radius: 20px; margin-top: 30px;}
-@media (min-width: 800px) {
-.missionTextP {padding-top: 5%;}
-.support-mission {text-align: center;}
-.support-mission-C {margin: 0 20%; text-align: center;}
+.text-container {
+  margin-top: -60px;
 }
-.imageWidth {width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px;}
+.cardd {
+  border-radius: 15px;
+}
+.mission {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.donate {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.cardd2 {
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.round {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.accord {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+@media (min-width: 800px) {
+  .missionTextP {
+    padding-top: 5%;
+  }
+  .support-mission {
+    text-align: center;
+  }
+  .support-mission-C {
+    margin: 0 20%;
+    text-align: center;
+  }
+}
+.imageWidth {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 @media (min-width: 760px) {
-  .grid1 {display: grid; grid-template-columns: auto auto auto; gap: 15px; margin-top: 30px;}
+  .grid1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 760px) {
-  .grid2Top {margin-top: 30px;}
+  .grid2Top {
+    margin-top: 30px;
+  }
 }
-.active {background-color: #FF0000;}
+.active {
+  background-color: #ff0000;
+}
+
+.hover2 {margin-left: -10px; margin-right: -10px;}
