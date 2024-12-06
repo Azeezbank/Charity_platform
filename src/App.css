@@ -135,7 +135,7 @@
   border-radius: 20px;
   margin-top: 30px;
 }
-@media (min-width: 800px) {
+@media (min-width: 760px) {
   .missionTextP {
     padding-top: 5%;
   }
@@ -159,14 +159,27 @@
     gap: 15px;
     margin-top: 30px;
   }
+  .engage {display: grid; grid-template-columns: auto auto auto; gap: 10px;}
+  .eng {margin-top: 20px;}
+  .woman_love {display: none;}
+  .card_edu_grid {display: grid; grid-template-columns: auto auto auto; gap: 12px;}
+  .grid_back_image {display: grid; grid-template-columns: auto auto auto;}
+  
 }
 @media (max-width: 760px) {
   .grid2Top {
     margin-top: 30px;
   }
+  .engagement {display: grid; grid-template-columns: 20% 80%; margin-top: 10px;}
 }
 .active {
   background-color: #ff0000;
 }
 
 .hover2 {margin-left: -10px; margin-right: -10px;}
+.round { text-align: center;}
+.woman_love {margin: 15px 10px 0px 10px; border-radius: 12px; width: 100%; margin-top: 30px;}
+.card_edu {background-color: white; padding: 30px 25px; border-radius: 15px; text-align: center; margin-bottom: 25px;}
+.read {font-weight: bold; border: 0.5px solid #dedede; background-color: white; border-radius: 30px;}
+.readd {font-weight: bold; border-radius: 30px; margin-top: 150px; margin-bottom: 60px;}
+.image_cover {background-color: rgba(0, 0, 0, 0.7); margin: -24px; margin-bottom: -60px;}

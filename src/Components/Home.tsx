@@ -10,8 +10,13 @@ import donate from "../assets/home-charity-tab-4.jpg";
 import clean from "../assets/home-charity-donation-2.jpg";
 import hunger from "../assets/home-charity-donation-4.jpg";
 import serve from "../assets/home-charity-donation-6.jpg";
-//import { button } from "framer-motion/client";
-//import { text } from "framer-motion/client";
+import woman_love from "../assets/woman-love.jpg";
+import man from "../assets/man.jpg";
+import edu_scholar from "../assets/edu-scholar.jpg";
+import health_camp from "../assets/health-camp.jpg";
+import env_proj from "../assets/env-proj.jpg";
+import comm_dev from "../assets/com-dev.jpg";
+import health_care_woman from "../assets/health-care-woman.jpg";
 
 const Home: React.FC = () => {
   const [isActive, setIsActive] = useState(1);
@@ -167,7 +172,12 @@ const Home: React.FC = () => {
         <div id="accordion">
           <div className="container bg-light round mt-5">
             <div className="cardd text-white">
-              <div className={`hover2 mission ps-3 pe-3 ${isActive === 1 ? 'active' : '' }`} onClick={() => setIsActive(1)}>
+              <div
+                className={`hover2 mission ps-3 pe-3 ${
+                  isActive === 1 ? "active" : ""
+                }`}
+                onClick={() => setIsActive(1)}
+              >
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
@@ -184,11 +194,13 @@ const Home: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                 </a>
+                </a>
               </div>
-            
 
-              <div className={`hover2 ${isActive === 2 ? 'active' : '' }`} onClick={() => setIsActive(2)}>
+              <div
+                className={`hover2 ${isActive === 2 ? "active" : ""}`}
+                onClick={() => setIsActive(2)}
+              >
                 <a
                   className="collapsed btn"
                   data-bs-toggle="collapse"
@@ -206,7 +218,10 @@ const Home: React.FC = () => {
                 </a>
               </div>
 
-              <div className={`hover2 ${isActive === 3 ? 'active' : '' }`} onClick={() => setIsActive(3)}>
+              <div
+                className={`hover2 ${isActive === 3 ? "active" : ""}`}
+                onClick={() => setIsActive(3)}
+              >
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
@@ -226,7 +241,10 @@ const Home: React.FC = () => {
                 </a>
               </div>
 
-              <div className={`hover2 donate ${isActive === 4 ? 'active' : '' }`} onClick={() => setIsActive(4)}>
+              <div
+                className={`hover2 donate ${isActive === 4 ? "active" : ""}`}
+                onClick={() => setIsActive(4)}
+              >
                 <a
                   className="btn"
                   data-bs-toggle="collapse"
@@ -363,72 +381,273 @@ const Home: React.FC = () => {
           <div className="bg-white rounded grid2Top">
             <img className="imageWidth " src={clean} alt="clean water" />
             <div className="p-3">
-            <h5>support acces to clean water</h5>
-            <p className="text-muted">
-              Together, we can make a meaningful impact and transform lives.
-            </p>
-            <hr />
-            <div className="progress">
-              <div
-                className="progress-bar bg-danger"
-                style={{ width: "1px" }}
-              ></div>
-            </div>
-            <div className="d-flex justify-content-between mt-3">
-              <p>
-                #1,000 <br />
-                <span className="text-muted">Amount available</span>
+              <h5>support acces to clean water</h5>
+              <p className="text-muted">
+                Together, we can make a meaningful impact and transform lives.
               </p>
-              <p className="text-center">
-                1 <br />
-                <span className="text-muted">Donations</span>
-              </p>
+              <hr />
+              <div className="progress">
+                <div
+                  className="progress-bar bg-danger"
+                  style={{ width: "1px" }}
+                ></div>
+              </div>
+              <div className="d-flex justify-content-between mt-3">
+                <p>
+                  #1,000 <br />
+                  <span className="text-muted">Amount available</span>
+                </p>
+                <p className="text-center">
+                  1 <br />
+                  <span className="text-muted">Donations</span>
+                </p>
               </div>
             </div>
           </div>
           <div className="bg-white rounded grid2Top">
             <img className="imageWidth" src={hunger} alt="clean water" />
             <div className="p-3">
-            <h5>Ending hunger - donate for access to food</h5>
-            <p className="text-muted">Every contribution counts towards building a world for everyone to live in.</p>
-            <hr/>
-            <div className="progress">
-              <div className="progress-bar bg-danger" style={{width: '1px'}}></div>
-            </div>
-            <div className="d-flex justify-content-between mt-3">
-            <p>
-                #1,000 <br />
-                <span className="text-muted">Amount available</span>
+              <h5>Ending hunger - donate for access to food</h5>
+              <p className="text-muted">
+                Every contribution counts towards building a world for everyone
+                to live in.
               </p>
-              <p className="text-center">
-                1 <br />
-                <span className="text-muted">Donations</span>
-              </p>
-            </div>
+              <hr />
+              <div className="progress">
+                <div
+                  className="progress-bar bg-danger"
+                  style={{ width: "1px" }}
+                ></div>
+              </div>
+              <div className="d-flex justify-content-between mt-3">
+                <p>
+                  #1,000 <br />
+                  <span className="text-muted">Amount available</span>
+                </p>
+                <p className="text-center">
+                  1 <br />
+                  <span className="text-muted">Donations</span>
+                </p>
+              </div>
             </div>
           </div>
           <div className="bg-white rounded grid2Top">
-          <img className="imageWidth " src={serve} alt="clean water" />
-          <div className="p-3">
-            <h5>Serve and support the community</h5>
-            <p className="text-muted">Join us in our mission to create a brighter future for generations to come.</p>
-            <hr/>
-            <div className="progress">
-              <div className="progress-bar bg-danger" style={{width: '1px'}}></div>
-            </div>
-            <div className="d-flex justify-content-between mt-3">
-            <p>
-                #1,000 <br />
-                <span className="text-muted">Amount available</span>
+            <img className="imageWidth " src={serve} alt="clean water" />
+            <div className="p-3">
+              <h5>Serve and support the community</h5>
+              <p className="text-muted">
+                Join us in our mission to create a brighter future for
+                generations to come.
               </p>
-              <p className="text-center">
-                1 <br />
-                <span className="text-muted">Donations</span>
-              </p>
-            </div>
+              <hr />
+              <div className="progress">
+                <div
+                  className="progress-bar bg-danger"
+                  style={{ width: "1px" }}
+                ></div>
+              </div>
+              <div className="d-flex justify-content-between mt-3">
+                <p>
+                  #1,000 <br />
+                  <span className="text-muted">Amount available</span>
+                </p>
+                <p className="text-center">
+                  1 <br />
+                  <span className="text-muted">Donations</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="container-fluid ps-4 pe-4 pb-4">
+        <h3 className="support-mission-C pt-5">
+          Reasons to trust our <br />{" "}
+          <span className="text-danger">commitment</span> and impact
+        </h3>
+        <p className="text-muted support-mission-C pt-2">
+          Connect with us - your gateway to engaging with our mission and
+          contributing to positive change.
+        </p>
+        <div className="engage mt-5">
+          <div className="engagement">
+            <h2 className="mt-4">
+              {" "}
+              <i className="bi bi-cookie bg-danger p-3 round rounded-circle text-white">
+                {" "}
+              </i>
+            </h2>
+            <div>
+              <h5 className="eng">Community engagement</h5>
+              <p className="text-muted">
+                Involving local communities to drive grassroots initiatives and
+                foster inclusive development
+              </p>
+            </div>
+          </div>
+          <div className="engagement">
+            <h2 className="mt-4">
+              <i className="bi bi-browser-safari bg-danger p-3 round rounded-circle text-white"></i>
+            </h2>
+            <div>
+              <h5 className="eng">Innovative solutions</h5>
+              <p className="text-muted">
+                Using technology and best practise to address complex challenge
+                effectively
+              </p>
+            </div>
+          </div>
+          <div className="engagement">
+            <h2 className="mt-4">
+              <i className="bi bi-people bg-danger p-3 round rounded-circle text-white"></i>
+            </h2>
+            <div>
+              <h5 className="eng">Dedicated team</h5>
+              <p className="text-muted">
+                passionate professional committed to making a real difference.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src={woman_love} className="woman_love" />
+        <img src={man} className="woman_love" />
+      </div>
+
+      <div className="container-fluid bg-light ps-4 pe-4 pb-4">
+        <h3 className="support-mission pt-5">
+          Empowering community through{" "}
+          <span className="text-danger">sustainable</span> programs
+        </h3>
+        <p className="text-muted support-mission-C pb-5">
+          Explore our impactful programs promoting education, healthcare access,
+          and community development.
+        </p>
+        <div className="card_edu_grid">
+          <div className="card_edu">
+            <h1 className="text-center">
+              <i className="bi bi-book text-danger"></i>
+            </h1>
+            <h4>Education initiatives</h4>
+            <p className="text-muted">
+              Empowering future generations through access to quality education
+              and skill development programs.
+            </p>
+            <button className="read mt-3 text-danger">Read more</button>
+          </div>
+          <div className="card_edu">
+            <h1 className="text-center">
+              <i className="bi bi-bandaid text-danger"></i>
+            </h1>
+            <h4>Healthcare services</h4>
+            <p className="text-muted">
+              Enhancing health outcomes and promoting wellness through
+              accessible healthcare services.
+            </p>
+            <button className="read mt-3 text-danger">Read more</button>
+          </div>
+          <div className="card_edu">
+            <h1 className="text-center">
+              <i className="bi bi-globe text-danger"></i>
+            </h1>
+            <h4>Community development</h4>
+            <p className="text-muted">
+              Fostering inclusive and resilient communities through
+              infrastructure projects, and social programs.
+            </p>
+            <button className="read mt-3 text-danger">Read more</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid_back_image">
+        <div
+          style={{
+            backgroundImage: `url(${edu_scholar})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="p-4 container-fluid"
+        >
+          <div className="image_cover">
+            <h3 className="text-white ps-5 pt-4">
+              Education scholarships program
+            </h3>
+            <button className="readd text-white bg-danger ms-5">
+              Read more
+            </button>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${health_camp})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="p-4 container-fluid"
+        >
+          <div className="image_cover">
+            <h3 className="text-white ps-5 pt-4">
+              Healthcare and support access campaign
+            </h3>
+            <button className="readd text-white bg-danger ms-5">
+              Read more
+            </button>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${env_proj})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="p-4 container-fluid"
+        >
+          <div className="image_cover">
+            <h3 className="text-white ps-5 pt-4">
+              Environmental conservation project
+            </h3>
+            <button className="readd text-white bg-danger ms-5">
+              Read more
+            </button>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${comm_dev})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="p-4 container-fluid"
+        >
+          <div className="image_cover">
+            <h3 className="text-white ps-5 pt-4">
+              Community development initiative
+            </h3>
+            <button className="readd text-white bg-danger ms-5">
+              Read more
+            </button>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${health_care_woman})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="p-4 container-fluid"
+        >
+          <div className="image_cover">
+            <h3 className="text-white ps-5 pt-4">
+              Heathcare and support access campaign
+            </h3>
+            <button className="readd text-white bg-danger ms-5">
+              Read more
+            </button>
+          </div>
+        </div>
+        <div className="bg-dark"></div>
+        
       </div>
     </>
   );
