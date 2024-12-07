@@ -183,6 +183,7 @@
     display: flex;
     justify-content: space-between;
   }
+  .round {margin-left: 10%; margin-right: 10%;}
 }
 @media (max-width: 760px) {
   .grid2Top {
@@ -199,15 +200,10 @@
 }
 
 .hover2 {
-  margin-left: -12px;
-  margin-right: -12px;
   width: 100%;
   text-align: left;
 }
 
-.round {
-  text-align: center;
-}
 .woman_love {
   margin: 15px 10px 0px 10px;
   border-radius: 12px;

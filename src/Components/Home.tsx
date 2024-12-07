@@ -170,10 +170,10 @@ const Home: React.FC = () => {
         </p>
 
         <div id="accordion">
-          <div className="container bg-light round mt-5">
+          <div className=" round bg-light mt-5">
             <div className="cardd text-white">
               <div
-                className={`hover2 mission ps-4 pe-3 ${
+                className={`hover2 mission ps-3 pe-3 ${
                   isActive === 1 ? "active" : ""
                 }`}
                 onClick={() => setIsActive(1)}
@@ -184,12 +184,12 @@ const Home: React.FC = () => {
                   href="#collapseOne"
                 >
                   <div className={`row`}>
-                    <div className="col-2 pt-2">
+                    <div className="col-2 pt-4">
                       <h3 className="bi bi-bullseye"></h3>
                     </div>
-                    <div className="col-10 ps-5">
-                      <h3 className={`float-start`}>Our mission</h3> <br />
-                      <p className="text-muted float-start">
+                    <div className="col-10 ps-4">
+                      <h4 className='text-start'>Our mission</h4>
+                      <p className="text-muted text-start">
                         About us and history
                       </p>
                     </div>
@@ -198,7 +198,7 @@ const Home: React.FC = () => {
               </div>
 
               <div
-                className={`hover2 ps-4 pe-3 ${isActive === 2 ? "active" : ""}`}
+                className={`hover2 ps-3 pe-3 ${isActive === 2 ? "active" : ""}`}
                 onClick={() => setIsActive(2)}
               >
                 <a
@@ -207,19 +207,19 @@ const Home: React.FC = () => {
                   href="#collapseTwo"
                 >
                   <div className="row">
-                    <div className="col-2">
+                    <div className="col-2 pt-3">
                       <h3 className="bi bi-backpack-fill"></h3>
                     </div>
-                    <div className="col-10 ps-5">
-                      <h3 className="float-start">Our programs</h3> <br />
-                      <p className="text-muted float-start">Make a change</p>
+                    <div className="col-10 ps-4">
+                      <h4 className="text-start">Our programs</h4>
+                      <p className="text-muted text-start">Make a change</p>
                     </div>
                   </div>
                 </a>
               </div>
 
               <div
-                className={`hover2 ps-3 ${isActive === 3 ? "active" : ""}`}
+                className={`hover2 ps-2 ${isActive === 3 ? "active" : ""}`}
                 onClick={() => setIsActive(3)}
               >
                 <a
@@ -227,13 +227,13 @@ const Home: React.FC = () => {
                   data-bs-toggle="collapse"
                   href="#collapseThree"
                 >
-                  <div className="row ps-3">
-                    <div className="col-2">
+                  <div className="row ps-2">
+                    <div className="col-2 pt-3">
                       <h3 className="bi bi-people-fill"></h3>
                     </div>
-                    <div className="col-10 float-start ps-5">
-                      <h3 className="float-start">Our partners</h3> <br />
-                      <p className="text-muted float-start">
+                    <div className="col-10 ps-4">
+                      <h4 className="text-start">Our partners</h4>
+                      <p className="text-muted text-start">
                         long-term partners
                       </p>
                     </div>
@@ -242,7 +242,7 @@ const Home: React.FC = () => {
               </div>
 
               <div
-                className={`hover2 ps-3 donate ${
+                className={`hover2 ps-2 donate ${
                   isActive === 4 ? "active" : ""
                 }`}
                 onClick={() => setIsActive(4)}
@@ -252,13 +252,13 @@ const Home: React.FC = () => {
                   data-bs-toggle="collapse"
                   href="#collapseFour"
                 >
-                  <div className="row ps-3">
-                    <div className="col-2">
+                  <div className="row ps-2">
+                    <div className="col-2 pt-3">
                       <h3 className="bi bi-currency-dollar"></h3>
                     </div>
-                    <div className="col-10 float-start ps-5">
-                      <h3 className="float-start">Donate now</h3> <br />
-                      <p className="text-muted float-start">Save a life</p>
+                    <div className="col-10 ps-4">
+                      <h4 className="text-start">Donate now</h4>
+                      <p className="text-muted text-start">Save a life</p>
                     </div>
                   </div>
                 </a>
@@ -266,7 +266,7 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className="container bg-light round p-4">
+          <div className="round bg-light round p-4">
             <div className="cardd2">
               <div
                 id="collapseOne"
