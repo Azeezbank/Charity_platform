@@ -652,18 +652,18 @@ const Home: React.FC = () => {
       </div>
       <div className="container-fluid bg-light pt-5 ps-3 pe-3 pb-4">
         <div className="think1">
-        <div>
-          <h3 className="">
-            Inspiring <span className="text-danger">stories</span> from
-            supporters
-          </h3>
-          <p className="text-muted">
-            Discover hearthfelt stories from our supporters, sharing their
-            experience and the impact of our work.
-          </p>
-        </div>
-        <div>
-          <button className="think bg-danger mt-2">What do you think</button>
+          <div>
+            <h3 className="">
+              Inspiring <span className="text-danger">stories</span> from
+              supporters
+            </h3>
+            <p className="text-muted">
+              Discover hearthfelt stories from our supporters, sharing their
+              experience and the impact of our work.
+            </p>
+          </div>
+          <div>
+            <button className="think bg-danger mt-2">What do you think</button>
           </div>
         </div>
         <div className="card_edu_grid mt-5">
@@ -684,7 +684,8 @@ const Home: React.FC = () => {
           <div className="testimonial">
             <h5 className="pt-2">Inpiring commitment</h5>
             <p className="text-muted">
-              Their collaboration create lasting impact and change lives, empowering communities.
+              Their collaboration create lasting impact and change lives,
+              empowering communities.
             </p>
             <div className="d-flex pt-2">
               <img src="" alt="image" className="me-2" />
@@ -697,7 +698,8 @@ const Home: React.FC = () => {
           <div className="testimonial">
             <h5 className="pt-2">Impactful work</h5>
             <p className="text-muted">
-              I trust their accountability and ethical practices, ensuring my contributionsnmake a meaningful difference.
+              I trust their accountability and ethical practices, ensuring my
+              contributionsnmake a meaningful difference.
             </p>
             <div className="d-flex pt-2">
               <img src="" alt="image" className="me-2" />
