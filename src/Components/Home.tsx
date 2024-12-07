@@ -173,7 +173,7 @@ const Home: React.FC = () => {
           <div className="container bg-light round mt-5">
             <div className="cardd text-white">
               <div
-                className={`hover2 mission ps-3 pe-3 ${
+                className={`hover2 mission ps-4 pe-3 ${
                   isActive === 1 ? "active" : ""
                 }`}
                 onClick={() => setIsActive(1)}
@@ -198,7 +198,7 @@ const Home: React.FC = () => {
               </div>
 
               <div
-                className={`hover2 ${isActive === 2 ? "active" : ""}`}
+                className={`hover2 ps-4 pe-3 ${isActive === 2 ? "active" : ""}`}
                 onClick={() => setIsActive(2)}
               >
                 <a
@@ -206,11 +206,11 @@ const Home: React.FC = () => {
                   data-bs-toggle="collapse"
                   href="#collapseTwo"
                 >
-                  <div className="row ps-3">
+                  <div className="row">
                     <div className="col-2">
                       <h3 className="bi bi-backpack-fill"></h3>
                     </div>
-                    <div className="col-10 float-start ps-5">
+                    <div className="col-10 ps-5">
                       <h3 className="float-start">Our programs</h3> <br />
                       <p className="text-muted float-start">Make a change</p>
                     </div>
@@ -219,7 +219,7 @@ const Home: React.FC = () => {
               </div>
 
               <div
-                className={`hover2 ${isActive === 3 ? "active" : ""}`}
+                className={`hover2 ps-3 ${isActive === 3 ? "active" : ""}`}
                 onClick={() => setIsActive(3)}
               >
                 <a
@@ -242,7 +242,9 @@ const Home: React.FC = () => {
               </div>
 
               <div
-                className={`hover2 donate ${isActive === 4 ? "active" : ""}`}
+                className={`hover2 ps-3 donate ${
+                  isActive === 4 ? "active" : ""
+                }`}
                 onClick={() => setIsActive(4)}
               >
                 <a
@@ -567,7 +569,7 @@ const Home: React.FC = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="p-4 container-fluid"
+          className="p-4 container-fluid overflow"
         >
           <div className="image_cover">
             <h3 className="text-white ps-5 pt-4">
@@ -584,7 +586,7 @@ const Home: React.FC = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="p-4 container-fluid"
+          className="p-4 container-fluid overflow"
         >
           <div className="image_cover">
             <h3 className="text-white ps-5 pt-4">
@@ -601,7 +603,7 @@ const Home: React.FC = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="p-4 container-fluid"
+          className="p-4 container-fluid overflow"
         >
           <div className="image_cover">
             <h3 className="text-white ps-5 pt-4">
@@ -618,7 +620,7 @@ const Home: React.FC = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="p-4 container-fluid"
+          className="p-4 container-fluid overflow"
         >
           <div className="image_cover">
             <h3 className="text-white ps-5 pt-4">
@@ -635,7 +637,7 @@ const Home: React.FC = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="p-4 container-fluid"
+          className="p-4 container-fluid overflow"
         >
           <div className="image_cover">
             <h3 className="text-white ps-5 pt-4">
@@ -647,7 +649,65 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="bg-dark"></div>
-        
+      </div>
+      <div className="container-fluid bg-light pt-5 ps-3 pe-3 pb-4">
+        <div className="think1">
+        <div>
+          <h3 className="">
+            Inspiring <span className="text-danger">stories</span> from
+            supporters
+          </h3>
+          <p className="text-muted">
+            Discover hearthfelt stories from our supporters, sharing their
+            experience and the impact of our work.
+          </p>
+        </div>
+        <div>
+          <button className="think bg-danger mt-2">What do you think</button>
+          </div>
+        </div>
+        <div className="card_edu_grid mt-5">
+          <div className="testimonial">
+            <h5 className="pt-2">Empowering change</h5>
+            <p className="text-muted">
+              Their work inspires hope and real change, fostering sustainable
+              practices for a healthier planet.
+            </p>
+            <div className="d-flex pt-2">
+              <img src="" alt="image" className="me-2" />
+              <div>
+                <h5>David Lee</h5>
+                <p className="text-muted">Environmentalist</p>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial">
+            <h5 className="pt-2">Inpiring commitment</h5>
+            <p className="text-muted">
+              Their collaboration create lasting impact and change lives, empowering communities.
+            </p>
+            <div className="d-flex pt-2">
+              <img src="" alt="image" className="me-2" />
+              <div>
+                <h5>Sarah Johnson</h5>
+                <p className="text-muted">Activist</p>
+              </div>
+            </div>
+          </div>
+          <div className="testimonial">
+            <h5 className="pt-2">Impactful work</h5>
+            <p className="text-muted">
+              I trust their accountability and ethical practices, ensuring my contributionsnmake a meaningful difference.
+            </p>
+            <div className="d-flex pt-2">
+              <img src="" alt="image" className="me-2" />
+              <div>
+                <h5>Emily Davis</h5>
+                <p className="text-muted">Philantropist</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
