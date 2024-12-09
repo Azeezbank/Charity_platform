@@ -522,7 +522,7 @@ const Home: React.FC = () => {
               </p>
             </div>
           </motion.div>
-          <div className="engagement">
+          <motion.div className="engagement" ref={ref6} initial={{opacity: 0, y: 50}} animate={{opacity: inview6 ? 1 : 0, y: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
               <i className="bi bi-browser-safari bg-danger p-3 round rounded-circle text-white"></i>
             </h2>
@@ -533,8 +533,8 @@ const Home: React.FC = () => {
                 effectively
               </p>
             </div>
-          </div>
-          <div className="engagement">
+          </motion.div>
+          <motion.div className="engagement" ref={ref7} initial={{opacity: 0, x: -50}} animate={{opacity: inview7 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <h2 className="mt-4">
               <i className="bi bi-people bg-danger p-3 round rounded-circle text-white"></i>
             </h2>
@@ -544,7 +544,7 @@ const Home: React.FC = () => {
                 passionate professional committed to making a real difference.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <img src={woman_love} className="woman_love" />
         <img src={man} className="woman_love" />
