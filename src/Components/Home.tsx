@@ -17,7 +17,7 @@ import health_camp from "../assets/health-camp.jpg";
 import env_proj from "../assets/env-proj.jpg";
 import comm_dev from "../assets/com-dev.jpg";
 import health_care_woman from "../assets/health-care-woman.jpg";
-import { easeIn, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 
 const Home: React.FC = () => {
