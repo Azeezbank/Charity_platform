@@ -414,7 +414,7 @@ const Home: React.FC = () => {
           impact and positive change
         </p>
         <div className="p-2 grid1">
-          <motion.div className="bg-white rounded grid2Top" ref={ref2} initial={{opacity: 0, x: -50}} animate={{opacity: inview2 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="bg-white rounded grid2Top" ref={ref2} initial={{opacity: 1, x: -50}} animate={{opacity: inview2 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <img className="imageWidth " src={clean} alt="clean water" />
             <div className="p-3">
               <h5>support acces to clean water</h5>
@@ -440,7 +440,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div className="bg-white rounded grid2Top" ref={ref3} initial={{opacity: 0, y: 50}} animate={{opacity: inview3 ? 1 : 0, y: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="bg-white rounded grid2Top" ref={ref3} initial={{opacity: 1, y: 50}} animate={{opacity: inview3 ? 1 : 0, y: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <img className="imageWidth" src={hunger} alt="clean water" />
             <div className="p-3">
               <h5>Ending hunger - donate for access to food</h5>
@@ -467,7 +467,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div className="bg-white rounded grid2Top" ref={ref4} initial={{opacity: 0, x: 50}} animate={{opacity: inview4 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
+          <motion.div className="bg-white rounded grid2Top" ref={ref4} initial={{opacity: 1, x: 50}} animate={{opacity: inview4 ? 1 : 0, x: 0}} transition={{duration: 1.5, ease: 'easeIn'}}>
             <img className="imageWidth " src={serve} alt="clean water" />
             <div className="p-3">
               <h5>Serve and support the community</h5>
