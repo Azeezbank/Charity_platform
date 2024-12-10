@@ -727,7 +727,7 @@ const Home: React.FC = () => {
               practices for a healthier planet.
             </p>
             <div className="d-flex pt-2">
-              <img src="" alt="image" className="me-2" />
+              <img src={woman_love} alt="image" className="me-2 textmonialImage" />
               <div>
                 <h5>David Lee</h5>
                 <p className="text-muted">Environmentalist</p>
@@ -741,7 +741,7 @@ const Home: React.FC = () => {
               empowering communities.
             </p>
             <div className="d-flex pt-2">
-              <img src="" alt="image" className="me-2" />
+              <img src={woman_love} alt="image" className="me-2 textmonialImage" />
               <div>
                 <h5>Sarah Johnson</h5>
                 <p className="text-muted">Activist</p>
@@ -755,7 +755,7 @@ const Home: React.FC = () => {
               contributionsnmake a meaningful difference.
             </p>
             <div className="d-flex pt-2">
-              <img src="" alt="image" className="me-2" />
+              <img src={baby} alt="image" className="me-2 textmonialImage"/>
               <div>
                 <h5>Emily Davis</h5>
                 <p className="text-muted">Philantropist</p>
