@@ -767,7 +767,8 @@ const Home: React.FC = () => {
           <AnimatePresence initial={false}>
             <motion.img key={indexp} src={parthners[indexp]} initial={{opacity: 0, x: 100}} animate={{opacity: 1, x: 0}}
             exit={{opacity: 0, x: -100}} transition={{duration: 0.5}} drag="x" dragConstraints={{left: 0, right: 0}}
-             onDrag={(e, { offset }) => {
+             onDragEnd={(_, info) => {
+              const { offset } = info;
               if (offset.x > 100) {
                 swipeP('prev');
               } else if (offset.x < -100) {
