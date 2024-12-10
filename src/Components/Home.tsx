@@ -25,7 +25,6 @@ import unicef from '../assets/unicef.png';
 import greenP from '../assets/greenP.png';
 import oxfarm from '../assets/oxfam.png';
 import HealthP from '../assets/healthP.png';
-import { offset } from "@popperjs/core";
 
 const Home: React.FC = () => {
   const [isActive, setIsActive] = useState(1);
@@ -101,7 +100,7 @@ const Home: React.FC = () => {
   }, [texts.length]);
 
   //Supporters
-  const parthners = [AmericaR, medeci, unicef, greenP, oxfarm]
+  const parthners = [AmericaR, medeci, unicef, greenP, oxfarm, HealthP]
   const [indexp, setIndexP] = useState(0);
 
   const swipeP = (direction : any) => {
