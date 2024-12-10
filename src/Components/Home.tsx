@@ -17,8 +17,15 @@ import health_camp from "../assets/health-camp.jpg";
 import env_proj from "../assets/env-proj.jpg";
 import comm_dev from "../assets/com-dev.jpg";
 import health_care_woman from "../assets/health-care-woman.jpg";
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import AmericaR from '../assets/america.png';
+import medeci from '../assets/medecin.png';
+import unicef from '../assets/unicef.png';
+import greenP from '../assets/greenP.png';
+import oxfarm from '../assets/oxfam.png';
+import HealthP from '../assets/healthP.png';
+import { offset } from "@popperjs/core";
 
 const Home: React.FC = () => {
   const [isActive, setIsActive] = useState(1);
@@ -41,6 +48,7 @@ const Home: React.FC = () => {
   ];
 
   const texts = ["lives", "hope", "futures"];
+
 
   const [currentIndex, setcurrentIndex] = useState(0);
   const [currentText, setcurrentText] = useState(0);
@@ -91,6 +99,18 @@ const Home: React.FC = () => {
     }, 2000);
     return () => clearInterval(intertext);
   }, [texts.length]);
+
+  //Supporters
+  const parthners = [AmericaR, medeci, unicef, greenP, oxfarm]
+  const [indexp, setIndexP] = useState(0);
+
+  const swipeP = (direction : any) => {
+    if (direction === 'next') {
+      setIndexP((prevInd) => (prevInd + 1) % parthners.length);
+    } else {
+      setIndexP((prevInd) => prevInd === 0 ? parthners.length -1 : prevInd - 1);
+    }
+  };
 
   return (
     <>
@@ -743,6 +763,21 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
+          </div>
+          <div style={{display: 'flex', justifyContent: 'center', overflow: 'hidden', position: 'relative', height: '100px'}}>
+          <AnimatePresence initial={false}>
+            <motion.img key={indexp} src={parthners[indexp]} initial={{opacity: 0, x: 100}} animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}} transition={{duration: 0.5}} drag="x" dragConstraints={{left: 0, right: 0}}
+             onDrag={(e, { offset }) => {
+              if (offset.x > 100) {
+                swipeP('prev');
+              } else if (offset.x < -100) {
+                swipeP('next');
+              }
+            }}
+            style={{position: 'absolute', fontSize: '2rem', paddingTop: '25px', cursor: 'grab', height: 'auto'}} 
+            />
+          </AnimatePresence>
         </div>
       </div>
     </>
