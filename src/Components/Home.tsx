@@ -305,7 +305,7 @@ const Home: React.FC = () => {
                 >
                   <div className="row ps-2">
                     <div className="col-2 pt-3">
-                      <h3 className="bi bi-currency-dollar"></h3>
+                      <h3 className="bi bi-cash"></h3>
                     </div>
                     <div className="col-10 ps-4">
                       <h4 className="text-start">Donate now</h4>
