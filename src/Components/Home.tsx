@@ -116,6 +116,7 @@ const Home: React.FC = () => {
       <nav className="navbar navbar-expand-sm fixed-top bg-light">
         <div className="container-fluid">
           <button
+            aria-label="button"
             className="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
@@ -565,8 +566,8 @@ const Home: React.FC = () => {
             </div>
           </motion.div>
         </div>
-        <img src={woman_love} className="woman_love" />
-        <img src={man} className="woman_love" />
+        <img src={woman_love} className="woman_love" alt="women-love" />
+        <img src={man} className="woman_love" alt="man" />
       </div>
 
       <div className="container-fluid bg-light ps-4 pe-4 pb-4">
